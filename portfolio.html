@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Студия</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+		integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+		crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
-    <!-- Шапка -->
-    <header class=" header header--border">
-        <div class="container flex">
-            <a class="header__logo logo link" href="./index.html"><span class="logo--first-color">Web</span><span
-                    class="header__logo--second-color">Studio</span></a>
-            <nav class="header__pagination pagination">
-                <ul class="pagination__list list flex">
-                    <li class="pagination__item">
-                        <a class="pagination__link link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link link pagination__link--current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="header__link header__link--mail link flex" href="mailto:info@devstudio.com">
-                <svg class="header__icon header__mail-icon" width="16px" height="12px">
-                    <use href="./images/icons.svg#icon-envelope">
-                    </use>
-                </svg>info@devstudio.com</a>
-            <a class="header__link header__link--phone link flex" href="tel:+380961111111">
-                <svg class="header__icon header__phone-icon" width="10px" height="16px">
-                    <use href="./images/icons.svg#icon-smartphone">
-                    </use>
-                </svg>+38 096 111 11 11</a>
-        </div>
-    </header>
+	<!-- Шапка -->
+	<header class="header header--border">
+		<div class="header__container container">
+			<div class="header__top">
+				<a class="header__logo logo link" href="./index.html"><span class="logo--first-color">Web</span><span
+						class="header__logo--second-color">Studio</span></a>
+				<button class="header__button" aria-expanded="false" aria-controls="pagination" data-menu-button
+					type="button">
+					<svg class="header__icon-menu" width="24px" height="16px">
+						<use class="header__burger-icon" href="./images/icons.svg#icon-burger"></use>
+						<use class="header__close-icon" href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<nav class="header__pagination pagination" id="pagination" data-menu>
+				<ul class="pagination__list list">
+					<li class="pagination__item">
+						<a class="pagination__link link" href="./index.html">Студия</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link link pagination__link--current" href="./portfolio.html">Портфолио</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link link" href="">Контакты</a>
+					</li>
+				</ul>
+				<div class="header__contacts">
+					<a class="header__link header__link--mail link" href="mailto:info@devstudio.com">
+						<svg class="header__icon header__mail-icon" width="16px" height="12px">
+							<use href="./images/icons.svg#icon-envelope">
+							</use>
+						</svg>info@devstudio.com</a>
+					<a class="header__link header__link--phone link" href="tel:+380961111111">
+						<svg class="header__icon header__phone-icon" width="10px" height="16px">
+							<use href="./images/icons.svg#icon-smartphone">
+							</use>
+						</svg>+38 096 111 11 11</a>
+				</div>
+				<div class="header__socals-box">
+					<a class="header__socals-link link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+					<a class="header__socals-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+					<a class="header__socals-link link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+					<a class="header__socals-link link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				</div>
+			</nav>
+		</div>
+	</header>
     <!-- Уникальный контент -->
     <main>
     <section class="gallery">
         <div class="container">
        <h1 class="visually-hidden">Портфолио</h1>
        <!-- Кнопки фильтра -->
-       <ul class="buttons__list list flex">
-           <li class="buttons__item"><button class="gallery__button" type="button">Приложения</button></li>
+       <ul class="buttons__list list">
            <li class="buttons__item"><button class="gallery__button" type="button">Все</button></li>
            <li class="buttons__item"><button class="gallery__button" type="button">Веб-сайты</button></li>
+           <li class="buttons__item"><button class="gallery__button" type="button">Приложения</button></li>
            <li class="buttons__item"><button class="gallery__button" type="button">Дизайн</button></li>
            <li class="buttons__item"><button class="gallery__button" type="button">Маркетинг</button></li>
        </ul>
        <!-- Галерея работ -->
-       <ul class="gallery__list list flex">
+       <ul class="gallery__list list">
            <li class="gallery__item">
                <div class="gallery__box">
-                   <img src="./images/portfolio/img1.jpg" alt="изображение странички сайта на мониторе ноутбука" width="370" height="294">
+                   <img src="./images/portfolio/img1.jpg" alt="изображение странички сайта на мониторе ноутбука" width="450px">
                    <div class="gallery__overlay">
                        <p class="gallery__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые серверa конкурентов.</p>
@@ -181,74 +200,72 @@
     </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__box flex">
-                <div class="left">
-                    <a class="footer__logo logo link" href="./index.html"><span
-                            class="logo--first-color">Web</span><span
-                            class="footer__logo--second-color">Studio</span></a>
-                    <address>
-                        <ul class="adress list">
-                            <li class="adress__map-item"><a class="adress__map-link link"
-                                    href="https://goo.gl/maps/PGJLxn3vR8UXmiXZ6">г. Киев, пр-т Леси Украинки, 26</a></li>
-                            <li class="adress__mail-item"><a class="adress__mail-link link"
-                                    href="mailto:info@example.com">info@example.com</a></li>
-                            <li class="adress__phone-item"><a class="adress__phone-link link" href="tel:+380991111111">+38
-                                    099 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="middle">
-                    <p class="footer__appeal text">присоединяйтесь</p>
-                    <ul class="list flex">
-                        <li class="footer__social-item">
-                            <a class="footer__social-item link flex" href="" >
-                                <svg class="footer__social-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-insta"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="footer__social-item link flex" href="" >
-                                <svg class="footer__social-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-twit"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="footer__social-item link flex" href="" >
-                                <svg class="footer__social-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-fbook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="footer__social-item link flex" href="" target="blanc"
-                                    rel="noopener noreferrer">
-                                <svg class="footer__social-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-lin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <form>
-                        <p class="footer__appeal text">подпишитесь на рассылку</p>
-                        <label>
-                            <input class="footer__input" type="email" name="email" placeholder="E-mail">
-                        </label>
-                        <button class="footer__submit-button button" type="submit">Подписаться
-                            <svg class="footer__send-icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="left">
+				<a class="footer__logo logo link" href="./index.html"><span class="logo--first-color">Web</span><span
+						class="footer__logo--second-color">Studio</span></a>
+				<address>
+					<ul class="adress list">
+						<li class="adress__map-item"><a class="adress__map-link link"
+								href="https://goo.gl/maps/PGJLxn3vR8UXmiXZ6">г. Киев, пр-т Леси Украинки, 26</a></li>
+						<li class="adress__mail-item"><a class="adress__mail-link link"
+								href="mailto:info@example.com">info@example.com</a></li>
+						<li class="adress__phone-item"><a class="adress__phone-link link" href="tel:+380991111111">+38
+								099 111 11 11</a></li>
+					</ul>
+				</address>
+			</div>
+			<div class="middle">
+				<p class="footer__appeal text">присоединяйтесь</p>
+				<ul class="socials__list list">
+					<li class="footer__social-item">
+						<a class="footer__social-link link" href="" target="blanc" rel="noopener noreferrer">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/icons.svg#icon-insta"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link link" href="" target="blanc" rel="noopener noreferrer">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/icons.svg#icon-twit"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link link" href="" target="blanc" rel="noopener noreferrer">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/icons.svg#icon-fbook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link link" href="" target="blanc" rel="noopener noreferrer">
+							<svg class="footer__social-icon" width="20px" height="20px">
+								<use href="./images/icons.svg#icon-lin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<form>
+					<p class="footer__appeal text">подпишитесь на рассылку</p>
+					<label class="footer__label">
+						<input class="footer__input" type="email" name="email" placeholder="E-mail">
+					</label>
+					<button class="footer__submit-button button" type="submit">Подписаться
+						<svg class="footer__send-icon" width="24px" height="24px">
+							<use href="./images/icons.svg#icon-send"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</footer>
+		<script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
