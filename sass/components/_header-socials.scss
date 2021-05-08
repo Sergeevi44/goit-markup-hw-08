@@ -1,0 +1,17 @@
+.header__socals-box{
+	padding-left: 40px;
+	padding-bottom: 48px;
+}
+
+.header__socals-link{
+	color: var(--accent-color);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+
+	letter-spacing: 0.02em
+}
+
+.header__socals-link:not(:last-child){
+margin-right: 20px;
+}

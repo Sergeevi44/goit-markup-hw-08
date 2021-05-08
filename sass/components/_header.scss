@@ -1,26 +1,34 @@
-.header{
+.header__container{
+	position: relative;
 	height: 60px;
 }
 
-.header__link {
+// !Mobile
+.header__button{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+}
+
+.header__close-icon{
 	display: none;
-	color: var(--primary-text-color);
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
 }
 
-.header__link--mail {
-	margin-left: auto;
-	margin-right: 50px;
+.header__button.is-open .header__burger-icon{
+	display: none;
+}
+.header__button.is-open .header__close-icon{
+	display: block;
 }
 
-.header__mail-icon {
-	margin-right: 10px;
-	fill: currentColor;
+.pagination.is-open{
+	display: block;
 }
-.header__phone-icon {
-	margin-right: 10px;
-	fill: currentColor;
-}
+
