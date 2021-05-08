@@ -19,30 +19,27 @@
 	<!-- Шапка -->
 	<header class="header header--border">
 		<div class="header__container container">
-			<div class="header__top">
-				<a class="header__logo logo link" href="./index.html"><span class="logo--first-color">Web</span><span
-						class="header__logo--second-color">Studio</span></a>
-				<button class="header__button" aria-expanded="false" aria-controls="pagination" data-menu-button
-					type="button">
-					<svg class="header__icon-menu" width="24px" height="16px">
-						<use class="header__burger-icon" href="./images/icons.svg#icon-burger"></use>
-						<use class="header__close-icon" href="./images/icons.svg#icon-close"></use>
-					</svg>
-				</button>
-			</div>
+			<a class="header__logo logo link" href="./index.html"><span class="logo--first-color">Web</span><span
+					class="header__logo--second-color">Studio</span></a>
+			<button class="header__button" aria-expanded="false" aria-controls="pagination" data-menu-button type="button">
+				<svg class="header__icon-menu" width="24px" height="16px">
+					<use class="header__burger-icon" href="./images/icons.svg#icon-burger"></use>
+					<use class="header__close-icon" href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
 			<nav class="header__pagination pagination" id="pagination" data-menu>
 				<ul class="pagination__list list">
 					<li class="pagination__item">
-						<a class="pagination__link link" href="./index.html">Студия</a>
+						<a class="pagination__link link pagination__link--current" href="./index.html">Студия</a>
 					</li>
 					<li class="pagination__item">
-						<a class="pagination__link link pagination__link--current" href="./portfolio.html">Портфолио</a>
+						<a class="pagination__link link" href="./portfolio.html">Портфолио</a>
 					</li>
 					<li class="pagination__item">
 						<a class="pagination__link link" href="">Контакты</a>
 					</li>
 				</ul>
-				<div class="header__contacts">
+				<div class="header__contacts header__contacts--mobile">
 					<a class="header__link header__link--mail link" href="mailto:info@devstudio.com">
 						<svg class="header__icon header__mail-icon" width="16px" height="12px">
 							<use href="./images/icons.svg#icon-envelope">
@@ -61,6 +58,19 @@
 					<a class="header__socals-link link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 				</div>
 			</nav>
+			<div class="header__contacts header__contacts--tablet">
+				<a class="header__link header__link--mail link" href="mailto:info@devstudio.com">
+					<svg class="header__icon header__mail-icon" width="16px" height="12px">
+						<use href="./images/icons.svg#icon-envelope">
+						</use>
+					</svg>info@devstudio.com</a>
+				<a class="header__link header__link--phone link" href="tel:+380961111111">
+					<svg class="header__icon header__phone-icon" width="10px" height="16px">
+						<use href="./images/icons.svg#icon-smartphone">
+						</use>
+					</svg>+38 096 111 11 11</a>
+			</div>
+	
 		</div>
 	</header>
     <!-- Уникальный контент -->
@@ -250,7 +260,7 @@
 				</ul>
 			</div>
 			<div class="right">
-				<form>
+				<form class="footer__form">
 					<p class="footer__appeal text">подпишитесь на рассылку</p>
 					<label class="footer__label">
 						<input class="footer__input" type="email" name="email" placeholder="E-mail">
