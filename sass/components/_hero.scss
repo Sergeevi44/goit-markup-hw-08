@@ -15,7 +15,12 @@
  		url(../images/hero.jpg);
  	background-repeat: no-repeat;
  	background-position: center;
+
+	 @media screen and (min-width:480px){
+		 width: 480px;
+	 }
  }
+
 .hero__title {
 	margin-top: 0;
 	margin-bottom: 30px;

@@ -1,14 +1,18 @@
 //! Team
 .socials__list {
-	padding-bottom: 30px;
-	margin-left: 32px;
-	margin-right: 32px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 24px;
+	// padding-bottom: 30px;
+	// margin-left: 32px;
+	// margin-right: 32px;
 }
 
 .socials__link {
-	justify-content: center;
-	width: 44px;
-	height: 44px;
+	// justify-content: center;
+	// align-items: center;
+	// width: 44px;
+	// height: 44px;
 
 	color: var(--icons-color);
 
@@ -17,19 +21,25 @@
 
 	transition: background-color 250ms var(--time-transition),
 		color 250ms var(--time-transition);
-		&:hover,
-		&:focus {
-			background-color: var(--accent-color);
-			color: var(--primary-bgc);
-		}
+		// &:hover,
+		// &:focus {
+		// 	background-color: var(--accent-color);
+		// 	color: var(--primary-bgc);
+		// }
 
 }
 
+.socials__item{
+	display: flex;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+}
 .socials__item:not(:last-child) {
 	margin-right: 10px;
 }
 .socials__icon {
-	fill: currentColor;
+	fill: var(--icons-color);
 }
 
 //! Footer

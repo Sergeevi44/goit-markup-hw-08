@@ -1,11 +1,14 @@
+.header{
+	height: 60px;
+}
+
 .header__container{
 	position: relative;
-	height: 60px;
 }
 
 // !Mobile
 .header__button{
-	position: absolute;
+	 position: absolute;
 	right: 15px;
 	top: 50%;
 	transform: translateY(-50%);
@@ -28,7 +31,8 @@
 	display: block;
 }
 
-.pagination.is-open{
-	display: block;
+.header__top{
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
-

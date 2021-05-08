@@ -1,9 +1,11 @@
 .header__socals-box{
 	padding-left: 40px;
 	padding-bottom: 48px;
+	background-color: var(--primary-bgc);
 }
 
 .header__socals-link{
+	display: inline-block;
 	color: var(--accent-color);
 	font-weight: 500;
 	font-size: 18px;
