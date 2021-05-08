@@ -1,0 +1,26 @@
+.header{
+	height: 60px;
+}
+
+.header__link {
+	display: none;
+	color: var(--primary-text-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.header__link--mail {
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.header__mail-icon {
+	margin-right: 10px;
+	fill: currentColor;
+}
+.header__phone-icon {
+	margin-right: 10px;
+	fill: currentColor;
+}

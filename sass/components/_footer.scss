@@ -1,0 +1,33 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	background-color: #2f303a;
+}
+
+.footer__box {
+	align-items: baseline;
+}
+
+.left {
+	margin-right: 70px;
+}
+
+.middle {
+	margin-right: 93px;
+}
+
+.footer__appeal {
+	margin-bottom: 20px;
+
+	color: var(--primary-bgc);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1.14;
+	text-transform: uppercase;
+}
+
+.right {
+	width: 570px;
+}

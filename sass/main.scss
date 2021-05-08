@@ -1,0 +1,8 @@
+//! Прячем контент
+@import "./vendors/visually-hidden";
+//! Переменные
+@import "./utils/variables";
+//! Универсальные стили
+@import "./base/module";
+//! Основные стили
+@import "./components/module";

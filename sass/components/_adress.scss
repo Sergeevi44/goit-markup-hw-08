@@ -1,0 +1,19 @@
+.adress {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+}
+.adress__map-item {
+	margin-bottom: 15px;
+}
+.adress__mail-item {
+	margin-bottom: 6px;
+}
+.adress__map-link {
+	color: var(--primary-bgc);
+}
+.adress__mail-link,
+.adress__phone-link {
+	color: rgba(255, 255, 255, 0.6);
+}
