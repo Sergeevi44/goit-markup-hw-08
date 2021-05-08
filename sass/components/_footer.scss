@@ -5,16 +5,20 @@
 	background-color: #2f303a;
 }
 
-.footer__box {
+.footer__container {
 	align-items: baseline;
 }
 
 .left {
-	margin-right: 70px;
-}
+	text-align: center;
+	padding-bottom: 60px;
+// 	margin-right: 70px;
+ }
 
 .middle {
-	margin-right: 93px;
+	text-align: center;
+	padding-bottom: 60px;
+	// margin-right: 93px;
 }
 
 .footer__appeal {
@@ -23,11 +27,12 @@
 	color: var(--primary-bgc);
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 1.14;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
 
 .right {
-	width: 570px;
+	text-align: center;
+	// width: 570px;
 }

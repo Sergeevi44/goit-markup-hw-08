@@ -141,8 +141,8 @@ img {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -607,6 +607,7 @@ textarea.modal__input {
 }
 
 .team__item {
+  padding-bottom: 24px;
   background-color: var(--primary-bgc);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -635,7 +636,6 @@ textarea.modal__input {
 .socials__list {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
 }
 
 .socials__link {
@@ -668,16 +668,10 @@ textarea.modal__input {
   color: var(--primary-bgc);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--time-transition);
 }
 
 .footer__social-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer__social-item:hover, .footer__social-item:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-bgc);
 }
 
 .footer__social-icon {
@@ -747,11 +741,12 @@ textarea.modal__input {
 
 .footer__input {
   height: 50px;
-  width: 350px;
+  width: 450px;
   margin: 0;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .footer__input::placeholder {
@@ -780,16 +775,18 @@ textarea.modal__input {
   background-color: #2f303a;
 }
 
-.footer__box {
+.footer__container {
   align-items: baseline;
 }
 
 .left {
-  margin-right: 70px;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .middle {
-  margin-right: 93px;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .footer__appeal {
@@ -797,13 +794,13 @@ textarea.modal__input {
   color: var(--primary-bgc);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .right {
-  width: 570px;
+  text-align: center;
 }
 
 .gallery {
