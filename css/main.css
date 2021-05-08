@@ -677,22 +677,22 @@ textarea.modal__input {
   fill: var(--icons-color);
 }
 
-.footer__social-item {
-  align-content: center;
+.footer__social-link {
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--primary-bgc);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.footer__social-item:not(:last-child) {
+.footer__social-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer__social-icon {
-  fill: currentColor;
+.footer__socal-icon {
+  fill: var(--primary-bgc);
 }
 
 .clients {

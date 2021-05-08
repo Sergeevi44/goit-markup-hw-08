@@ -42,13 +42,14 @@
 }
 
 //! Footer
-.footer__social-item {
-	align-content: center;
-	justify-content: center;
+.footer__social-link {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
 	width: 44px;
 	height: 44px;
 
-	color: var(--primary-bgc);
+
 
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
@@ -65,5 +66,5 @@
 }
 
 .footer__social-icon {
-	fill: currentColor;
+	fill: var(--primary-bgc);
 }

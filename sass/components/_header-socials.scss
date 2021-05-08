@@ -1,10 +1,10 @@
-.header__socals-box{
+.header__socials-box{
 	padding-left: 40px;
 	padding-bottom: 48px;
 	background-color: var(--primary-bgc);
 }
 
-.header__socals-link{
+.header__socials-link{
 	display: inline-block;
 	color: var(--accent-color);
 	font-weight: 500;
@@ -14,6 +14,6 @@
 	letter-spacing: 0.02em
 }
 
-.header__socals-link:not(:last-child){
+.header__socials-link:not(:last-child){
 margin-right: 20px;
 }
