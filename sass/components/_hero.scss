@@ -1,6 +1,6 @@
 .hero {
-	 max-height: 400px;
-	 max-width: 1600px;
+	max-height: 400px;
+	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 118px;
@@ -19,6 +19,10 @@
 	 @media screen and (min-width:480px){
 		 width: 480px;
 	 }
+
+	 @media screen and (min-width:768px) {
+		 width: 768px;
+	 }
  }
 
 .hero__title {
@@ -34,6 +38,12 @@
 	text-transform: uppercase;
 }
  .hero__button {
-	 margin-left: 125px;
+	@media screen and (min-width:480px) {
+		margin-left: 125px;
+	}
+
+	@media screen and (min-width:768px) {
+		margin-left: 269px;
+	}
 // 	margin-left: 485px;
  }
