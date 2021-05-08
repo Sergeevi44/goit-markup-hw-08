@@ -62,6 +62,16 @@ img {
   height: auto;
 }
 
+.header--border {
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header--border {
+    border: none;
+  }
+}
+
 .projects__title,
 .team__title,
 .clients__title {
@@ -150,13 +160,21 @@ img {
   color: var(--accent-color);
 }
 
-.header__logo {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  line-height: 1.16;
+@media screen and (max-width: 767px) {
+  .header__logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+  }
 }
 
 .header__logo--second-color {
@@ -176,8 +194,23 @@ img {
   height: 60px;
 }
 
-.header__container {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__button {
@@ -189,6 +222,12 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .header__close-icon {
@@ -203,42 +242,91 @@ img {
   display: block;
 }
 
-.header__top {
-  position: relative;
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 767px) {
+  .header__icon {
+    display: none;
+  }
 }
 
-.header__icon {
-  display: none;
+@media screen and (min-width: 480px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 64px;
+    background-color: var(--primary-bgc);
+  }
 }
 
-.header__contacts {
-  display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 64px;
-  background-color: var(--primary-bgc);
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
-.header__link {
-  padding-left: 40px;
-  color: var(--primary-text-color);
+@media screen and (max-width: 767px) {
+  .header__contacts--tablet {
+    display: none;
+  }
 }
 
-.header__link--mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+@media screen and (min-width: 768px) {
+  .header__contacts--mobile {
+    display: none;
+  }
 }
 
-.header__link--phone {
-  margin-bottom: 32px;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
+@media screen and (min-width: 480px) {
+  .header__link {
+    padding-left: 40px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header__link--mail {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__link--mail {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header__link--phone {
+    margin-bottom: 32px;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__link--phone {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
 }
 
 .header__mail-icon {
@@ -246,9 +334,23 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .header__mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .header__phone-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header__phone-icon {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .header__icon-menu:hover,
@@ -261,6 +363,12 @@ img {
   padding-right: 15px;
   padding-bottom: 48px;
   background-color: var(--primary-bgc);
+}
+
+@media screen and (min-width: 768px) {
+  .header__socals-box {
+    display: none;
+  }
 }
 
 .header__socals-link {
@@ -276,50 +384,82 @@ img {
   margin-right: 20px;
 }
 
-.header__pagination {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  overflow-y: scroll;
-  background-color: var(--primary-bgc);
+@media screen and (max-width: 767px) {
+  .header__pagination {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    background-color: var(--primary-bgc);
+  }
 }
 
 .pagination.is-open {
   display: block;
 }
 
-.pagination__list {
-  padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 15px;
-  padding-bottom: 302px;
-  background-color: var(--primary-bgc);
-  z-index: 5;
+@media screen and (max-width: 767px) {
+  .pagination__list {
+    display: block;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 15px;
+    padding-bottom: 302px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    background-color: var(--primary-bgc);
+  }
 }
 
-.pagination__item {
-  display: block;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
+@media screen and (max-width: 767px) {
+  .pagination__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-.pagination__item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (min-width: 768px) {
+  .pagination__item {
+    display: inline-block;
+    position: relative;
+  }
+  .pagination__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .pagination__link {
   color: var(--secondary-color);
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .pagination__link--current {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .pagination__link--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .hero {

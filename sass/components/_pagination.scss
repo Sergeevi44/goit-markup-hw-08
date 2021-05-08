@@ -1,15 +1,28 @@
 .header__pagination {
-	display: none;
-	
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-z-index: 5;
-	overflow-y: scroll;
+	@media screen and (max-width:767px) {
+		display: none;
 
-	background-color: var(--primary-bgc);
+		width: 100%;
+		height: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+
+	
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow-y: scroll;
+
+		background-color: var(--primary-bgc);
+
+		@media screen and (min-width:768px) {
+			
+		}
+	}
 }
 
 .pagination.is-open{
@@ -17,53 +30,66 @@ z-index: 5;
 }
 
 .pagination__list{
-	padding-top: 60px;
-	padding-left: 40px;
-	padding-right: 15px;
-	padding-bottom: 302px;
+	@media screen and (max-width:767px) {
+		display: block;
+		padding-top: 60px;
+		padding-left: 40px;
+		padding-right: 15px;
+		padding-bottom: 302px;
+
+		font-style: normal;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 1.18;
+		letter-spacing: 0.02em;
 
 		background-color: var(--primary-bgc);
-	z-index: 5;
 
-}
-// .pagination__item:not(:last-child) {
-// 	position: relative;
+		@media screen and (min-width:768px) {
+			
+		}
 
-// 	margin-right: 50px;
-// }
-.pagination__item {
-	display: block;
-
-	font-style: normal;
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 1.18;
-	letter-spacing: 0.02em;
-	&:not(:last-child){
-		margin-bottom: 32px;
-	}
-	// padding-top: 32px;
+		// padding-top: 32px;
 	// padding-bottom: 32px;
 
 // 	font-size: 14px;
 // 	line-height: 1.14;
+	}
+}
+.pagination__item {
+	@media screen and (max-width:767px) {
+		&:not(:last-child){
+		margin-bottom: 32px;
+		}
+	}
+
+	@media screen and (min-width:768px) {
+		display: inline-block;
+		position: relative;
+		&:not(:last-child){
+			margin-right: 50px;
+	}
  }
+}
 
  .pagination__link{
 	 color: var(--secondary-color);
+	 padding-top: 28px;
+	 padding-bottom: 28px;
  }
 
 .pagination__link--current {
 	color: var(--accent-color);
-	// &::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	left: 0;
-
-	// 	width: 100%;
-	// 	height: 4px;
-	// 	background-color: var(--accent-color);
-	// 	border-radius: 2px;
-	// }
+	@media screen and (min-width:768px) {
+		&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left:0;
+		width: 100%;
+		height: 4px;
+		background-color: var(--accent-color);
+		border-radius: 2px;
+		}
+	}
 }
