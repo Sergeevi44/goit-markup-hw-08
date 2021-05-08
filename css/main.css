@@ -277,11 +277,12 @@ img {
 
 .header__pagination {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  overflow-y: scroll;
   background-color: var(--primary-bgc);
 }
 
@@ -360,8 +361,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 30;
   overflow-y: scroll;
+  padding-top: 93px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--time-transition);
@@ -377,18 +382,17 @@ img {
 }
 
 .modal {
-  padding-top: 93px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  position: relative;
+  z-index: 15;
   background-color: var(--primary-bgc);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms var(--time-transition);
 }
 
 .modal__close-btn {
   position: absolute;
+  top: 8px;
+  right: 8px;
   z-index: 800;
   width: 30px;
   height: 30px;
@@ -424,7 +428,7 @@ img {
   color: var(--secondary-color);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -443,6 +447,11 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+
+.modal__box:hover, .modal__box:focus {
+  color: var(--accent-color);
+  transition: color 250ms var(--time-transition);
 }
 
 .modal__label {
@@ -519,7 +528,7 @@ textarea.modal__input {
 }
 
 .modal__checkbox-icon {
-  margin-right: 7px;
+  margin-right: 4px;
   fill: transparent;
   background-color: transparent;
   border-radius: 2px;
@@ -528,13 +537,20 @@ textarea.modal__input {
 }
 
 .modal__link {
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
+}
+
+.modal__checkbox-text {
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .modal__submit-button {
   margin-top: 30px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: 85px;
+  margin-right: 85px;
   margin-bottom: 40px;
 }
 
@@ -772,7 +788,15 @@ textarea.modal__input {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
 }
 
 .footer__container {

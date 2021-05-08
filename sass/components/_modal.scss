@@ -1,17 +1,23 @@
-.backdrop {
-	 position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	overflow-y: scroll;
+ .backdrop {
+ position: fixed;
 
-	background-color: rgba(0, 0, 0, 0.2);
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ z-index: 30;
+overflow-y: scroll;
 
-	opacity: 1;
-	transition: opacity 250ms var(--time-transition);
-}
+padding-top: 93px;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 94px;
+
+ background-color: rgba(0, 0, 0, 0.2);
+
+opacity: 1;
+transition: opacity 250ms var(--time-transition);
+ }
 
 .is-hidden {
 	opacity: 0;
@@ -22,10 +28,8 @@
 }
 
 .modal {
-	padding-top: 93px;
-	padding-bottom: 94px;
-	padding-left: 15px;padding-right: 15px;
-	// position: absolute;
+	position: relative;
+	z-index: 15;
 	// width: 528px;
 	// height: 581px;
 	// top: 50%;
@@ -37,11 +41,13 @@
 	border-radius: 4px;
 
 	// transform: translate(-50%, -50%) scale(1);
-	transition: transform 250ms var(--time-transition);
+	// transition: transform 250ms var(--time-transition);
 }
 
 .modal__close-btn {
 	position: absolute;
+	top: 8px;
+	right: 8px;
 	z-index: 800;
 	width: 30px;
 	height: 30px;
@@ -82,7 +88,7 @@
 	color: var(--secondary-color);
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
@@ -102,6 +108,11 @@
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.01em;
+	&:hover,&:focus{
+		color: var(--accent-color);
+			transition: color 250ms var(--time-transition);
+
+	}
 }
 .modal__label {
 	position: relative;
@@ -178,7 +189,7 @@ textarea.modal__input {
 }
 
 .modal__checkbox-icon {
-	margin-right: 7px;
+	margin-right: 4px;
 	fill: transparent;
 
 	background-color: transparent;
@@ -190,12 +201,20 @@ textarea.modal__input {
 }
 
 .modal__link {
+	font-size: 12px;
+	line-height: 1.17;
 	color: var(--accent-color);
+}
+
+.modal__checkbox-text{
+		font-size: 12px;
+	line-height: 1.17;
+
 }
 
 .modal__submit-button {
 	margin-top: 30px;
-	margin-left: 124px;
-	margin-right: 124px;
+	margin-left: 85px;
+	margin-right: 85px;
 	margin-bottom: 40px;
 }
