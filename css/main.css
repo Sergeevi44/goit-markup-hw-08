@@ -650,34 +650,34 @@ textarea.modal__input {
   margin-bottom: 10px;
 }
 
-.socials__list {
+.socals__list {
   display: flex;
   justify-content: center;
 }
 
-.socials__link {
+.socals__link {
   color: var(--icons-color);
   background-color: var(--primary-bgc);
   border-radius: 50%;
   transition: background-color 250ms var(--time-transition), color 250ms var(--time-transition);
 }
 
-.socials__item {
+.socals__item {
   display: flex;
   align-items: center;
   width: 44px;
   height: 44px;
 }
 
-.socials__item:not(:last-child) {
+.socals__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.socials__icon {
+.socals__icon {
   fill: var(--icons-color);
 }
 
-.footer__social-link {
+.footer__socal-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -687,7 +687,7 @@ textarea.modal__input {
   border-radius: 50%;
 }
 
-.footer__social-link:not(:last-child) {
+.footer__socal-item:not(:last-child) {
   margin-right: 10px;
 }
 
