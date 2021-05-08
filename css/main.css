@@ -685,26 +685,36 @@ textarea.modal__input {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.clients__link {
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.clients__item {
+  display: flex;
   justify-content: center;
-  width: 170px;
+  align-items: center;
+  width: calc((100% - 30px * 2) / 2);
   height: 92px;
-  color: var(--icons-color);
+  margin-top: 30px;
+  margin-left: 30px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   transition: border 250ms var(--time-transition), color 250ms var(--time-transition);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__item:hover, .clients__item:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__link {
+  color: var(--icons-color);
 }
 
 .clients__icon {
