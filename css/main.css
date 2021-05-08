@@ -722,17 +722,48 @@ textarea.modal__input {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc(( 100% - 30px * 3) /2);
+    height: 251px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
 .features__icon-box {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 190px;
-  padding-right: 190px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .features__icon-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 190px;
+    padding-right: 190px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__icon-box {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
 }
 
 .features__title {
@@ -743,7 +774,6 @@ textarea.modal__input {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .projects {
@@ -789,6 +819,15 @@ textarea.modal__input {
   background-color: var(--secondary-bgc);
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .team__item {
   padding-bottom: 24px;
   background-color: var(--primary-bgc);
@@ -796,8 +835,18 @@ textarea.modal__input {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .team__box {
