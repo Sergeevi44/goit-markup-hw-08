@@ -485,8 +485,13 @@ img {
 
 .pagination__link {
   color: var(--secondary-color);
-  padding-top: 28px;
-  padding-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination__link {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
 }
 
 .pagination__link--current {
@@ -1041,12 +1046,22 @@ textarea.modal__input {
   border-radius: 50%;
 }
 
-.footer__socal-item:not(:last-child) {
-  margin-right: 10px;
+@media screen and (min-width: 1200px) {
+  .footer__socal-link {
+    transition: background-color 250ms var(--time-transition);
+  }
+  .footer__socal-link:hover, .footer__socal-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bgc);
+  }
 }
 
-.footer__socal-icon {
+.footer__socal-link .footer__socal-icon {
   fill: var(--primary-bgc);
+}
+
+.footer__socal-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .clients {
@@ -1140,15 +1155,21 @@ textarea.modal__input {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 
 .footer__input::placeholder {
   padding-left: 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 
 .footer__submit-button {
@@ -1183,6 +1204,14 @@ textarea.modal__input {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .footer__container {
   align-items: baseline;
 }
@@ -1200,9 +1229,22 @@ textarea.modal__input {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .left {
+    padding: 0;
+    text-align: left;
+  }
+}
+
 .middle {
   text-align: center;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .middle {
+    padding: 0;
+  }
 }
 
 .footer__appeal {
@@ -1219,11 +1261,24 @@ textarea.modal__input {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .right {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__submit-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__submit-button {
+    display: inline-flex;
+    margin-left: 12px;
   }
 }
 

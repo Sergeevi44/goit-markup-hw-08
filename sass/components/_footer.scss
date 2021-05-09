@@ -13,6 +13,13 @@
 	@media screen and (min-width:768px) {
 		width: 768px;
 	}
+
+	@media screen and (min-width:1200px) {
+		width: 1600px;
+		padding-top: 94px;
+		padding-bottom: 94px;
+		
+	}
 }
 
 .footer__container {
@@ -28,12 +35,20 @@
 .left {
 	text-align: center;
 	padding-bottom: 60px;
+		@media screen and (min-width:1200px) {
+		padding: 0;
+		text-align: left;
+	}
+
 // 	margin-right: 70px;
  }
 
 .middle {
 	text-align: center;
 	padding-bottom: 60px;
+	@media screen and (min-width:1200px) {
+		padding: 0;
+	}
 	// margin-right: 93px;
 }
 
@@ -50,6 +65,9 @@
 
 .right {
 	text-align: center;
+	@media screen and (min-width:1200px) {
+		text-align: left;
+	}
 	// width: 570px;
 }
 
@@ -58,5 +76,10 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@media screen and (min-width:1200px) {
+		display: inline-flex;
+		margin-left: 12px;
 	}
 }

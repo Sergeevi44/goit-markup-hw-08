@@ -60,19 +60,21 @@
 
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
+	@media screen and (min-width:1200px) {	
+	transition: background-color 250ms var(--time-transition);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		color: var(--primary-bgc);
 
-	// transition: background-color 250ms var(--time-transition);
-	// &:hover,
-	// &:focus {
-	// 	background-color: var(--accent-color);
-	// 	color: var(--primary-bgc);
-	// }
+	}
 }
 
-	.footer__socal-item:not(:last-child) {
-		margin-right: 10px;
-	}
 
 .footer__socal-icon {
 	fill: var(--primary-bgc);
 }
+}
+.footer__socal-item:not(:last-child) {
+		margin-right: 10px;
+	}

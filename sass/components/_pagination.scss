@@ -18,10 +18,6 @@
 		overflow-y: scroll;
 
 		background-color: var(--primary-bgc);
-
-		@media screen and (min-width:768px) {
-			
-		}
 	}
 }
 
@@ -74,8 +70,11 @@
 
  .pagination__link{
 	 color: var(--secondary-color);
-	 padding-top: 28px;
-	 padding-bottom: 28px;
+	 @media screen and (min-width:768px) {
+		padding-top: 28px;
+		padding-bottom: 28px;
+
+	 }
  }
 
 .pagination__link--current {
