@@ -1410,6 +1410,10 @@ textarea.modal__input {
   overflow: hidden;
 }
 
+.gallery__box img {
+  height: 100%;
+}
+
 .gallery__overlay {
   position: absolute;
   bottom: 0;

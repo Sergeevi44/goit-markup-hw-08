@@ -83,6 +83,9 @@
 .gallery__box {
 	position: relative;
 	overflow: hidden;
+	img{
+		height: 100%;
+	}
 }
 
 
