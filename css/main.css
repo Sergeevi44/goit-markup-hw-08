@@ -1177,12 +1177,15 @@ textarea.modal__input {
   fill: var(--primary-bgc);
 }
 
+.footer__submit-button {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__submit-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
   }
 }
 
