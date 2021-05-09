@@ -84,6 +84,14 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__title,
+  .team__title,
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -512,6 +520,7 @@ img {
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
+    padding-bottom: 60px;
   }
 }
 
@@ -525,6 +534,7 @@ img {
   .hero {
     width: 100%;
     max-width: 1600px;
+    padding-bottom: 94px;
   }
 }
 
@@ -797,8 +807,13 @@ textarea.modal__input {
 }
 
 .features {
-  padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -816,6 +831,12 @@ textarea.modal__input {
     height: 251px;
     margin-top: 30px;
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 4*30px) / 4);
   }
 }
 
@@ -841,6 +862,13 @@ textarea.modal__input {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__icon-box {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .features__title {
   margin-bottom: 10px;
   color: var(--secondary-color);
@@ -853,13 +881,22 @@ textarea.modal__input {
 
 .projects {
   display: none;
-  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: flex;
+  }
+}
+
+.projects__list {
+  display: flex;
 }
 
 .projects__item {
   position: relative;
-  width: calc((100% - 2 * 30px) / 3);
+  width: calc((100% - 3 * 30 px) / 3);
 }
 
 .projects__item:not(:last-child) {
@@ -869,7 +906,7 @@ textarea.modal__input {
 .projects__text {
   position: absolute;
   top: 100%;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
   width: 370px;
   height: 70px;
   display: flex;
@@ -924,6 +961,13 @@ textarea.modal__input {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__item {
+    padding-bottom: 30px;
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
 .team__box {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -952,9 +996,27 @@ textarea.modal__input {
   transition: background-color 250ms var(--time-transition), color 250ms var(--time-transition);
 }
 
+@media screen and (min-width: 1200px) {
+  .socals__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socals__link:hover, .socals__link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bgc);
+  }
+}
+
 .socals__item {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
 }
@@ -964,7 +1026,7 @@ textarea.modal__input {
 }
 
 .socals__icon {
-  fill: var(--icons-color);
+  fill: currentColor;
 }
 
 .footer__socal-link {
