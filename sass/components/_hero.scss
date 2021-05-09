@@ -23,6 +23,11 @@
 	 @media screen and (min-width:768px) {
 		 width: 768px;
 	 }
+
+	 @media screen and (min-width:1200px) {
+		 width: 100%;
+		 max-width: 1600px;
+	 }
  }
 
 .hero__title {
@@ -36,14 +41,13 @@
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	@media screen and (min-width:1200px) {
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
  .hero__button {
-	@media screen and (min-width:480px) {
-		margin-left: 125px;
-	}
-
-	@media screen and (min-width:768px) {
-		margin-left: 269px;
-	}
-// 	margin-left: 485px;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
  }
