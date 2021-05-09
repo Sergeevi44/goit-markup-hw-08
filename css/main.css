@@ -1224,6 +1224,12 @@ textarea.modal__input {
   }
 }
 
+@media screen and (min-width_1200px) {
+  .footer__container {
+    justify-content: space-between;
+  }
+}
+
 .left {
   text-align: center;
   padding-bottom: 60px;
@@ -1343,6 +1349,12 @@ textarea.modal__input {
     width: calc((100% - 2 * 30px) / 2);
     margin-top: 30px;
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    width: calc((100% - 3 * 30px) / 3);
   }
 }
 

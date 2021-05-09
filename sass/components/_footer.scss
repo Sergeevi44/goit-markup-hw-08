@@ -30,6 +30,10 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 	}
+
+	@media screen and (min-width_1200px) {
+		justify-content: space-between;
+	}
 }
 
 .left {
