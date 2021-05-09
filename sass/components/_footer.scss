@@ -6,20 +6,20 @@
 
 	background-color: #2f303a;
 
-	@media screen and(min-width:480px) {
-		width: 480px;
-	}
+	// @media screen and(min-width:480px) {
+	// 	width: 480px;
+	// }
 
-	@media screen and (min-width:768px) {
-		width: 768px;
-	}
+	// @media screen and (min-width:768px) {
+	// 	width: 768px;
+	// }
 
-	@media screen and (min-width:1200px) {
-		width: 1600px;
-		padding-top: 94px;
-		padding-bottom: 94px;
+	// @media screen and (min-width:1200px) {
+	// 	width: 1600px;
+	// 	padding-top: 94px;
+	// 	padding-bottom: 94px;
 		
-	}
+	// }
 }
 
 .footer__container {
@@ -73,17 +73,4 @@
 		text-align: left;
 	}
 	// width: 570px;
-}
-
-.footer__submit-button{
-	@media screen and (min-width:768px) {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	@media screen and (min-width:1200px) {
-		display: inline-flex;
-		margin-left: 12px;
-	}
 }
