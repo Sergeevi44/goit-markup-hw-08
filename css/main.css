@@ -78,8 +78,8 @@ img {
   margin-bottom: 30px;
   color: var(--secondary-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -89,6 +89,8 @@ img {
   .team__title,
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -1052,6 +1054,13 @@ textarea.modal__input {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -1074,6 +1083,22 @@ textarea.modal__input {
 
 .clients__item:hover, .clients__item:focus {
   border: 1px solid var(--accent-color);
+}
+
+.clients__item:hover .clients__link, .clients__item:focus .clients__link {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 6 * 30px) / 6);
+  }
 }
 
 .clients__link {
