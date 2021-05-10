@@ -66,12 +66,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
-  .header--border {
-    border: none;
-  }
-}
-
 .projects__title,
 .team__title,
 .clients__title {
@@ -283,6 +277,14 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header__bottom--mobile {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header__contacts--tablet {
     display: none;
   }
@@ -296,7 +298,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .header__link {
-    padding-left: 40px;
     font-weight: 500;
     color: var(--primary-text-color);
   }
@@ -403,9 +404,7 @@ img {
 }
 
 .header__socals-box {
-  padding-left: 40px;
   padding-right: 15px;
-  padding-bottom: 48px;
   background-color: var(--primary-bgc);
 }
 
@@ -478,6 +477,7 @@ img {
   .pagination__item {
     display: inline-block;
     position: relative;
+    font-weight: 500;
   }
   .pagination__item:not(:last-child) {
     margin-right: 50px;
@@ -520,6 +520,12 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-height: 600px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -571,7 +577,7 @@ img {
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
-    padding-bottom: 60px;
+    padding-bottom: 118px;
   }
 }
 
@@ -585,7 +591,8 @@ img {
   .hero {
     width: 100%;
     max-width: 1600px;
-    padding-bottom: 94px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 
@@ -859,11 +866,13 @@ textarea.modal__input {
 
 .features {
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -930,6 +939,12 @@ textarea.modal__input {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
 .projects {
   display: none;
   padding-bottom: 94px;
@@ -980,6 +995,13 @@ textarea.modal__input {
   line-height: 1.19;
   text-align: center;
   background-color: var(--secondary-bgc);
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1289,6 +1311,7 @@ textarea.modal__input {
 @media screen and (min-width: 1200px) {
   .middle {
     padding: 0;
+    text-align: left;
   }
 }
 

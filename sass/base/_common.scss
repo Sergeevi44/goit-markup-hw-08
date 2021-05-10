@@ -43,9 +43,6 @@ img {
 }
 
 .header--border {
-	@media screen and (max-width:767px) {
-		border: none;
-	}
 	border-bottom: 1px solid #ececec;
 }
 
